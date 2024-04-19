@@ -39,4 +39,6 @@ Created an API where we need to pass website_url and our code will return the br
  - -- express
  - -- dotenv
  - -- puppeteer
+ - -- cheerio
+ - -- axios
  - -- swagger
