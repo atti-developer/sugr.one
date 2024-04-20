@@ -44,7 +44,7 @@ async function extractLogoByIcon(websiteUrl) {
         global.appLogger.info(self, `Logo Fetched Successfully.. : `, logoUrl);
         return logoUrl
     } catch (err) {
-        global.appLogger.error(self, `Internal Server Error: `, error.message);
+        global.appLogger.error(self, `Internal Server Error: `, err.message);
         throw err
     }
 

@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const { extractLogo } = require('../controllers/index.controller')
+const { ValidateUrl } = require('../middleware/validateUrl')
 /* GET home page. */
 router.get('/', function (req, res, next) {
   res.redirect('/api-docs')
@@ -27,6 +28,6 @@ router.get('/', function (req, res, next) {
  *       500:
  *         description: Error occurred
  */
-router.get('/extract-logo', extractLogo);
+router.get('/extract-logo', ValidateUrl, extractLogo);
 
 module.exports = router;
