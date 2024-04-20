@@ -31,6 +31,7 @@ Created an API where we need to pass website_url and our code will return the br
  -  -- Routes
  -  -- Controller
  - -- Services
+ - -- Middleware
  - -- Logger
  - -- Utils
  - -- Swagger
